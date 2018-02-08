@@ -56,7 +56,7 @@ h3{
 }
 h4{
 	font-size: 1.5rem;
-	font-weight: 300;
+	font-weight: bold;
 	color: #424242
 }
 h5{
@@ -90,7 +90,7 @@ h5{
 	color:#e67b93; 
 }
 .blue{
-	color: #9592fe;
+	color: #265284;
 }
 .punck_gradient{
 	background: linear-gradient(45deg, rgba(242,95,90,1) 0%, rgba(199,44,142,1) 34%, rgba(123,66,189,1) 99%, rgba(123,66,189,1) 100%);
@@ -290,7 +290,7 @@ line-height: 1.5rem;
 .soc_grid{
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	font-size: 14px;
 	margin-left: 120px;
@@ -299,14 +299,22 @@ line-height: 1.5rem;
 .soc_grid a{
 	line-height: 24px;
 	vertical-align: middle;
+	margin-right:10px;
+}
+.soc_grids_item{
+
+	width: 30%;
+	display: flex;
+	flex-flow: row;
 }
 .fab{
 	border-radius: 50%;
 	color: #fff;
+	margin-right: 5px;
 }
 .fa-vk{
-	background: #9592fe;
-	padding:6px 5px;
+	background: #265284;
+	padding:6px 6px;
 }
 .fa-instagram{
 	background: linear-gradient(90deg, rgba(242,95,90,1) 0%, rgba(199,44,142,1) 34%, rgba(123,66,189,1) 99%, rgba(123,66,189,1) 100%);
@@ -323,13 +331,24 @@ line-height: 1.5rem;
 		margin-left: 20px;
 
 	}
+	.soc_grids_item{
+		width: 40%;
+		
+	}
 }
 @media (max-width: 467px){
 	.soc_grid{
 		margin-left: 20px;
-				height: 100px;
 		flex-flow: column;
 		align-items: flex-start;
+	}
+		.soc_grids_item{
+		width: 65%;
+			margin-bottom: 8px;
+		
+	}
+	.soc_grid a{
+		margin-bottom: 8px;
 	}
 }
 /*==================================================*/
@@ -553,8 +572,9 @@ footer h2{
 }
 /*===============  карусель  ===============*/
 .contener_owl{
-	margin: 0 auto;
-	position: relative;
+    margin: 3px 3px;
+    position: relative;
+    box-shadow: 2px 1px 2px #c4c4c4, -2px 0px 2px #c4c4c4;
 }
 .wrap_img_owl{
 	width: 100%;

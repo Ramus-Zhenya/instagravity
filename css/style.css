@@ -458,6 +458,9 @@ line-height: 1.5rem;
 footer{
 	margin-top: 6.25rem;
 }
+footer h2{
+	letter-spacing: 3px;
+}
 .form_footer{
 	display: flex;
 	flex-flow: column;

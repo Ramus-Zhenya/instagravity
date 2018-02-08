@@ -562,8 +562,8 @@ footer h2{
 }
 .like{
 	position: absolute;
-	right: 10%;
-	bottom: 11%;
+	right: 9%;
+	bottom: 10.5%;
 }
 .like > span{
 	color: #fff;
@@ -575,11 +575,11 @@ footer h2{
 	height:270px;
 }
 	.like{
-	right: 9%;
+	right: 10%;
 }
 	.like > span{
 	padding-left: 16px;
-	font-size: 14px;	
+	font-size: 12px;	
 }
 }
 @media (max-width: 980px){
@@ -588,8 +588,8 @@ footer h2{
 	height:310px;
 }
 		.like{
-	right: 9%;
-	bottom: 12%;		
+	right: 8%;
+	bottom: 11.5%;		
 }
 	.like > span{
 	padding-left: 22px;

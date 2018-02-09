@@ -22,7 +22,8 @@ $(document).ready(function() {
             items:1,
 			dots: false,
 			 navText: ["<", ">"],
-			nav:true
+			nav:true,
+			margin:0,
         },
         767:{
             items:2

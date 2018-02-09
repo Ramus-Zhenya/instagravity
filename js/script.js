@@ -23,7 +23,7 @@ $(document).ready(function() {
 			dots: false,
 			 navText: ["<", ">"],
 			nav:true,
-			margin:0,
+			margin:10,
         },
         767:{
             items:2
@@ -40,7 +40,7 @@ function getTimeRemaining(endtime) {
   var seconds = Math.floor((t / 1000) % 60);
   var minutes = Math.floor((t / 1000 / 60) % 60);
   var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1400 * 60 * 60 * 24));
+  var days = Math.floor(t / (1700 * 60 * 60 * 24));
   return {
     'total': t,
     'days': days,
@@ -71,7 +71,7 @@ function initializeClock(id, endtime) {
   }
 
   updateClock();
-  var timeinterval = setInterval(updateClock, 100);
+  var timeinterval = setInterval(updateClock, 10000);
 }
 
 var deadline="January 01 2018 00:00:00 GMT+0300"; //for Ukraine

@@ -129,7 +129,7 @@ h5{
 	position: absolute;
 	left: 0;
 	height: 1.25rem;
-	bottom: 0px;
+	bottom: 15px;
 	z-index: 200;
 }
 .fullscreen-bg {

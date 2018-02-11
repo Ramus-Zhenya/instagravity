@@ -110,6 +110,8 @@ img{
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
+	
+	
 	height: 100%;
 	position: relative;
 	text-align: center;
@@ -135,14 +137,14 @@ img{
 	position: absolute;
 	left: 0;
 	height: 1.25rem;
-	bottom: 15px;
+	bottom: 50px;
 	z-index: 200;
 }
 .fullscreen-bg {
     overflow: hidden;
     z-index: 0;
     position: relative;
-    height: 100%;
+    height: 10vw;
     width: 100%;
     padding-top:45%;
 }
@@ -198,6 +200,19 @@ img{
 
 	.overlay h1 {
 	    font-size:;
+	}
+}
+@media (max-width: 980px){
+	h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0.1rem 0 2rem;
+}
+	.header p {
+    margin-bottom: 0;
+}
+	.ancor-svg{
+		bottom: 15px;
 	}
 }
 @media (max-width: 467px){
@@ -745,7 +760,7 @@ margin:0 4px;
 		.footer_inst_content p
 	{
 		padding: 2px 0;
-		font-size: 10px;
+		font-size: 13px;
 	}
 }
 @media (max-width: 767px){
@@ -842,7 +857,7 @@ ul{
 
 }
 .ul_dots .li_dots{
-	margin-left: 66px;
+	margin-left: 65px;
 }
 .ul_dots, .ul_check{
 	width: 30rem;
@@ -1061,10 +1076,10 @@ ul li{
 		text-align: center;
 }
 }
-@media (max-width: 767px){
+@media (max-width:1200px){
 		.col_item{
 	width:440px;
-		text-align: center;
+	text-align: center;
 }
 	.col_item:last-child{
 		margin-top: 1.5rem;

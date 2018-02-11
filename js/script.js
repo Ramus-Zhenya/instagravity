@@ -4,9 +4,7 @@ var target = $(this).attr('href');
 $('html, body').animate({scrollTop: $(target).offset().top}, 800);
 return false;
 });
-//$(document).ready(function(){
-//  $(".owl-carousel").owlCarousel();
-//});
+
 $(document).ready(function() {
 	$('.owl-carousel').owlCarousel({
     loop:false,
@@ -78,4 +76,27 @@ var deadline="January 01 2018 00:00:00 GMT+0300"; //for Ukraine
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000); // for endless timer
 initializeClock('clockdiv', deadline);
 	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

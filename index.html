@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="robots" content="noindex">
-	<title>Document</title>
+	<title>Ninaserebrova</title>
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
@@ -36,8 +36,8 @@
 			</div>	
 		</div>
 	    <video loop muted autoplay poster="video/plane.jpg" class="fullscreen-bg__video">
-	        <source src="video/plane.mp4" type="video/mp4">
-	        <source src="video/plane.webm" type="video/webm">
+	        <source src="video/instadrive.mp4" type="video/mp4">
+	        <source src="video/instadrive.webm" type="video/webm">
 	    </video>
 </div>
 	
@@ -912,14 +912,14 @@
 	<div class="container-fluid ">
 		<div class="bg_box">
 			<h2>Оставьте заявку и я Вам перезвоню</h2>
-			<form class="form_footer" id="form" name="form">
-				<label>Ваш e-mail</label>
-				<input type="text" class="form-control_footer" id="" name="user_phone" placeholder="NinaSerebrova@gmail.com">
+			<form class="form_footer" id="form">
+<!--				<label>Ваш e-mail</label>-->
+<!--				<input type="text" class="form-control_footer" id="mail" name="email" placeholder="NinaSerebrova@gmail.com">-->
     			<label>Ваше имя</label>
-				<input type="text" class="form-control_footer" id="" name="user_phone" placeholder="Nina">
+				<input type="text" class="form-control_footer" name="name" placeholder="Nina" required="required">
      			<label>Ваш телефон</label>
-      			<input type="text" class="form-control_footer" id="" name="user_phone" placeholder="+ 375 (25) 531-43-43">
-      			<button type="submit" type="tel" class="btn">оcтавить заявку</button>
+      			<input type="text" class="form-control_footer" name="phone" placeholder="+ 375 (25) 531-43-43" required="required">
+      			<input  type="submit" class="btn" value="оcтавить заявку">
       		
  			</form>
 		</div>
@@ -928,6 +928,22 @@
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+		
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "form.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!")}
+			});
+           
+    });
+});    
+</script>
 </body>
 </html>

@@ -842,11 +842,11 @@ margin:0 4px;
 .li_dots:before{
 	content: '';
 	position: absolute;
-	width: 5px;
-	height: 5px;
+	width: 10px;
+	height: 10px;
 	background: #000;
-	left: -48px;
-	top: 8px;
+	left: -50px;
+	top: 12px;
 	border-radius: 50%;
 }
 .fas{

@@ -20,6 +20,14 @@
 </head>
 
 <body>
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
+
+<div id="hellopreloader">
+	<div id="hellopreloader_preload"></div>
+	<p><a href="http://hello-site.ru"></a></p>
+</div>
+
+<!-- HelloPreload http://hello-site.ru/preloader/ -->
 <header class="video_bg well1">
 <div class="fullscreen-bg">
 		<div class="overlay_opacity">
@@ -990,6 +998,25 @@ function initializeClock(id, endtime) {
 var deadline="February 18 2018 00:00:00 GMT+0300"; //for Ukraine
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 400); // for endless timer
 initializeClock('clockdiv', deadline);  
+</script>
+<script type="text/javascript">
+	var hellopreloader = document.getElementById("hellopreloader_preload");
+
+	function fadeOutnojquery(el) {
+		el.style.opacity = 1;
+		var interhellopreloader = setInterval(function() {
+			el.style.opacity = el.style.opacity - 0.05;
+			if (el.style.opacity <= 0.05) {
+				clearInterval(interhellopreloader);
+				hellopreloader.style.display = "none";
+			}
+		}, 16);
+	}
+	window.onload = function() {
+		setTimeout(function() {
+			fadeOutnojquery(hellopreloader);
+		}, 1000);
+	};
 </script>
 </body>
 </html>

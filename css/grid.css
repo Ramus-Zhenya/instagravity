@@ -44,7 +44,12 @@ q:before, q:after {
   content: '';
   content: none;
 }
-
+/* Remove outline on the forms and links */
+input{
+	border-style: none;
+    outline: 0;
+    outline-offset: 0;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
